@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+/* ROOT */
+
+:root {
+    --cor-geral-logo: white;
+    --cor-fundo-logo: black;
+    --fonte-logo-h1: "Audiowide" ;
+}
+
+/* LOGO */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+div#logo {
+    background-color: var(--cor-fundo-logo);
+    color: var(--cor-geral-logo);
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 10px gray;
+}
+
+div#logo h1{
+    font-family: var(--fonte-logo-h1);
+    font-size: 4.5em;
+}
+
+div#logo p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+}
+
+/* MENU de Navegação */
+div#menu {
+    background:linear-gradient(to right, rgb(70,70, 70), rgb(100,100, 100));
+    display: block;
+    text-align: center;
+    color: var(--cor-geral-logo);
+    padding: 10px;
+}
+
