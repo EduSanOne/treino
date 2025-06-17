@@ -9,7 +9,22 @@ Desktop: 992px até 1200px
 Grande telas: acima de 1200px
 */
 
-@media screen and (min-width: 600px) { /*CONFIG TABLET */
-   
+@media screen and (min-width: 768px) { /*CONFIG TABLET */
     
+    nav#menu span {
+        display: none;
+}
+    
+    nav#menu {
+        display: block;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        margin-left: 30px;
+   }
+
+   main {
+        width: 768px;
+   }
 }

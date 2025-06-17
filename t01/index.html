@@ -14,7 +14,7 @@
 
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div id="logo">
             <h1>BikeGuard</h1>
@@ -37,6 +37,14 @@
 
     </main>
     <script>
+        function mudouTamanho () {
+            if (window.innerWidth >=768) {
+                navbar.style.display = 'block'
+            } else {
+                navbar.style.display ='none'
+            }
+        }
+        
         function clickMenu () {
             if (navbar.style.display == 'block') {
                 navbar.style.display='none'
