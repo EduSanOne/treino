@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*PRINCIPAL */
 *{
     padding: 0px;
     margin: 0px;
@@ -8,10 +8,7 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    
-    background-image: linear-gradient(to bottom, rgb(224, 224, 224), white);
+   background-image: linear-gradient(to bottom, rgba(230, 230, 230, 0.856), white);
 }
 
 header > h1 {
@@ -25,16 +22,37 @@ main {
     width: 100vw;
     height: 100vh;
 }
+/* SEÇÃO DE LOGIN */
 
 section#login {
     position:absolute;
     top: 50%;
     left: 50%;
-    width: 300px;
-    height: 100px;
-    padding: 10px;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    padding: 15px;
+    overflow: hidden;
     
     background-color: gray; 
-
+    
     transform: translate(-50%,-50%);
 }
+
+section#login > div#imagem {
+    display: block;
+    background: url(../imagens/ciclista.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+}
+
+div#formulario h2 {
+    text-align: center;
+    padding: 10px;
+} 
+
+div.campo {
+    text-align: center;
+}
+
