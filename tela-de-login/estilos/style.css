@@ -52,7 +52,24 @@ div#formulario h2 {
     padding: 10px;
 } 
 
-div.campo {
-    text-align: center;
+div.campo span {
+    display: inline-block;
+    color: white;
+    border: 1px solid black;
 }
 
+div#formulario {
+    position: relative;
+
+}
+
+div.campo input {
+    position: absolute;
+    transform: translate(-4px,1px);
+    height: 25px;
+    border-radius: 0 10px 10px 0;
+}
+
+div.campo {
+    background-color: black;
+}

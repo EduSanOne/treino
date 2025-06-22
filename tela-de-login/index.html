@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
@@ -18,13 +19,25 @@
             <div id="imagem"></div>
             <div id="formulario">
                 <h2>Login</h2>
-                <div class="campo">
-                    <label for="iemail">E-mail</label> <input type="email" name="email" id="iemail">
-                </div>
-                <div class="campo">
-                    <label for="ipass">Senha</label> <input type="password" name="pass" id="ipass">
-                </div>
-            </div>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                         <span class="material-symbols-outlined">
+                    person
+                    </span>
+                        <input type="email" name="email" id="iemail" required maxlength="30" autocomplete="email" placeholder="Seu e-mail">
+                        <label for="iemail">E-mail</label> 
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                    key
+                    </span>
+                      <input type="password" name="pass" id="ipass" required minlength="8" max="20" autocomplete="current-password" placeholder="Sua senha">
+                    <label for="ipass">Senha</label> 
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci a senha</a>
+                                </div>
+                </form>
         </section>
     </main>
     <footer>
