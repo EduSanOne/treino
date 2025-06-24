@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Burguer 03</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/media-query.css">
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Burguer</h1>
+        <p>Aquele teste de menu né pae kk</p>
+    </header>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickNavbar()">menu</span> 
+    <nav id="navbar">
+        <ul>
+            <li><a href="Home">Home</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></li>
+            <li><a href="#">Opção 5</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>
+                Noticia
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum rerum quasi suscipit provident! Eos velit natus vitae non ipsam nemo blanditiis officia odit porro dolores facere labore autem, necessitatibus tenetur commodi aut fugiat qui explicabo! Ipsum at pariatur dignissimos.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum rerum quasi suscipit provident! Eos velit natus vitae non ipsam nemo blanditiis officia odit porro dolores facere labore autem, necessitatibus tenetur commodi aut fugiat qui explicabo! Ipsum at pariatur dignissimos.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad voluptatum rerum quasi suscipit provident! Eos velit natus vitae non ipsam nemo blanditiis officia odit porro dolores facere labore autem, necessitatibus tenetur commodi aut fugiat qui explicabo! Ipsum at pariatur dignissimos.</p>
+        </article>
+    </main>
+    <footer>
+        Feito por Eduardo Santos
+    </footer>
+    <script>
+        function clickNavbar () {
+            if (navbar.style.display == 'block') {
+                navbar.style.display = 'none'
+            } else {
+                navbar.style.display = 'block'
+            }
+        }
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                navbar.style.display = 'block' 
+            } else {
+                navbar.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
