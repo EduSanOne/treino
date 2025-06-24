@@ -73,6 +73,11 @@ nav > ul > li > a {
     color: white;
 }
 
+nav > ul > li:hover {
+    background-color: #3e3f40;
+    color: white;
+}
+
 nav > ul > li > a:hover {
     padding: 5px;
     border-radius: 5px;
