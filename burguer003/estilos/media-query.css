@@ -16,11 +16,15 @@ Grande telas: acima de 1200px
 
     nav#navbar {
         display: block;
+        text-align: center;
     }
 
     nav#navbar > ul > li {
         display: inline-block;
         margin: 0;
+        margin-left: 5px;
+        border-radius: 10px;
+        
     }
 
     nav#navbar > ul > li  > a:hover {

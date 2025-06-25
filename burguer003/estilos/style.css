@@ -10,10 +10,11 @@
 }
 
 
-body, html {
+body,html {
     background-color: rgb(255, 207, 119);
     height: 100%;
-    width: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -88,6 +89,8 @@ nav > ul > li > a:hover {
 }
 
 main {
+    display: block;
+    flex: 1;
     margin: 40px auto 80px auto;
     max-width: 800px;
     width: 70vw;
@@ -110,6 +113,7 @@ main > article > p {
 
 footer {
     text-align: center;
+   
     background-color: black;
     color: white;
 }
