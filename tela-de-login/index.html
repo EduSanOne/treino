@@ -26,24 +26,24 @@
                          <span class="material-symbols-outlined">
                     person
                     </span>
-                        <input type="email" name="email" id="iemail" required maxlength="30" autocomplete="email" placeholder="Seu e-mail">
+                        <input type="email" name="email" id="iemail" required minlength="10"
+                         maxlength="30" autocomplete="email" placeholder="Seu e-mail">
                         <label for="iemail">E-mail</label> 
                     </div>
                     <div class="campo">
                         <span class="material-symbols-outlined">
                     key
                     </span>
-                      <input type="password" name="pass" id="ipass" required minlength="8" max="20" autocomplete="current-password" placeholder="Sua senha">
+                      <input type="password" name="pass" id="ipass" required minlength="8" maxlength="20" autocomplete="current-password" placeholder="Sua senha">
                     <label for="ipass">Senha</label> 
                     </div>
-                    <input type="submit" value="Entrar">
-                    <a href="#">Esqueci a senha</a>
-                                </div>
+                        <input type="submit" value="Entrar">
+                        <a href="#" id="botao">Esqueci a senha <span class="material-symbols-outlined">
+                    mail
+                    </span></a>
+            </div>
                 </form>
         </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
