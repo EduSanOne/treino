@@ -11,11 +11,8 @@ Grande telas: acima de 1200px
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     
-    body,html {
+    main{
         background: linear-gradient(to bottom, rgb(0, 190, 175), rgb(136, 0, 190));
-        display: block;
-        height: 100%;
-        width: 100%;
     }
 
     section#login {
@@ -41,11 +38,8 @@ Grande telas: acima de 1200px
 
 @media screen and (min-width: 992px) {
     
-    body,html {
+    main {
         background: linear-gradient(to bottom, rgb(0, 190, 175), rgb(136, 0, 190));
-        display: block;
-        height: 100%;
-        width: 100%;
     }
 
     section#login {
