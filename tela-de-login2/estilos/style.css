@@ -55,6 +55,7 @@ div#imagem {
 
 div#formulario {
     padding: 15px;
+    height: 100%;
 }
 
 div#formulario > h1 {
