@@ -33,7 +33,8 @@ Grande telas: acima de 1200px
 
 @media screen and (min-width: 992px) {
     section#login {
-        width: 90vw;
+        width: 70vw;
+        max-width: 1000px;
         height: 320px;
     }
 
