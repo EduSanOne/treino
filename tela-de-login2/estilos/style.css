@@ -16,7 +16,7 @@ header > h1 {
     display: block;
     text-align: center;
     font-size: 2em;
-    padding: 15px;
+    padding-top: 15px;
 
     background-color: rgb(55, 247, 237);
 }
