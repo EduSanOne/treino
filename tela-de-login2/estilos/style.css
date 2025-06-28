@@ -34,6 +34,8 @@ section#login {
     position: absolute;
     width: 250px;
     height: auto;
+    min-height: 500px;
+    max-height: 520px;
     border-radius: 20px;
     overflow: hidden;
 
