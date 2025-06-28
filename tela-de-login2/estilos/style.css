@@ -33,7 +33,7 @@ main {
 section#login {
     position: absolute;
     width: 280px;
-    height: 500px;
+    height: 515px;
     border-radius: 10px;
     overflow: hidden;
 
@@ -55,7 +55,6 @@ div#imagem {
 
 div#formulario {
     padding: 15px;
-    height: 100%;
 }
 
 div#formulario > h1 {
