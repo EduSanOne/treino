@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Burguer-login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <h1>EddySans</h1>
+            <p>The best products for you.</p>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h2>Login</h2>
+                <p>Welcome back. Log in or create an account to access and configure your environment.</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="mail" id="imail" required minlength="8" maxlength="15" placeholder="Your email">
+                        <label for="imail">Email</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="pass" id="ipass" required minlength="8" maxlength="15" placeholder="Your password">
+                        <label for="ipass">Password</label>
+                    </div>
+                    <input type="submit" value="Login">
+                    <a href="#" id="botao">I forgot my password <span class="material-symbols-outlined">mail</span></a>
+                </form>    
+            </div>
+        </section>
+    </main>
+    <footer>
+      Project maked by Eduardo Santos.
+    </footer>
+</body>
+</html>
+</body>
+</html>
