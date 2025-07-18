@@ -12,16 +12,59 @@ Grande telas: acima de 1200px
 @media screen and (min-width:768px) and (max-width:992px) {
     header {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
     }
 
-    span {
-        display: none;
+    span#menu {
+        display:none;
     }
 
     nav#navbar {
         display: block;
     }
+
+    nav#navbar > ul {
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: 20px;
+    }
+
+    main {
+        background-image: url(../imagens/store-show-clothing-interior-design-aisle-design-1220950-pxhere.com.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
+@media screen and (min-width:992px) {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    span#menu {
+        display:none;
+    }
+
+    nav#navbar {
+        display: block;
+    }
+
+    nav#navbar > ul {
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: 20px;
+    }
+
+    main {
+        background-image: url(../imagens/store-show-clothing-interior-design-aisle-design-1220950-pxhere.com.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

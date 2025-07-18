@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <div class="logo">
+        <a href="index.html" class="logo">
             <h1>EddySans</h1>
             <p>The best products for you.</p>
-        </div>
-        <span onclick="clickMenu()"  class="material-symbols-outlined">menu</span>
+        </a>
+        <span id="menu" onclick="clickMenu()"  class="material-symbols-outlined">menu</span>
         <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -33,7 +33,7 @@
         </article>
     </main>
     <footer>
-        Project maked by Eduardo Santos.
+        Project maked by Eduardo Santos (T1).
     </footer>
     <script>
         function clickMenu() {
@@ -41,6 +41,14 @@
                 navbar.style.display = 'none'
             } else {
                 navbar.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                navbar.style.display = 'block'
+            } else {
+                navbar.style.display = 'none'
             }
         }
     </script>

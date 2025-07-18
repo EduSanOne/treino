@@ -8,15 +8,21 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        main {
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <div class="logo">
+        <a href="index.html" class="logo">
             <h1>EddySans</h1>
             <p>The best products for you.</p>
-        </div>
-        <span class="material-symbols-outlined">menu</span>
-        <nav>
+        </a>
+        <span id="menu" onclick="clickMenu()"  class="material-symbols-outlined">menu</span>
+        <nav id="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Products</a></li>
@@ -26,7 +32,7 @@
         </nav>
     </header>
     <main>
-         <section id="login">
+        <section id="login">
             <div id="imagem">
 
             </div>
@@ -51,7 +57,24 @@
         </section>
     </main>
     <footer>
-        Project maked by Eduardo Santos.
+        Project maked by Eduardo Santos (T1).
     </footer>
+    <script>
+        function clickMenu() {
+            if (navbar.style.display == 'block') {
+                navbar.style.display = 'none'
+            } else {
+                navbar.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                navbar.style.display = 'block'
+            } else {
+                navbar.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

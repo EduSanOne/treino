@@ -14,17 +14,18 @@ html, body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+  
 }
 
-body {
-    background-image: url(../imagens/store-show-clothing-interior-design-aisle-design-1220950-pxhere.com.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+main {
+    height: 100vh;
+    display: flex;
+    padding-top: 20px;
+    background-color: #5FD1CD;
 }
 
 main > article {
-    margin: 20px auto;
+    margin: auto;
     display: block;
     width: 70vw;
     height: auto;
@@ -32,6 +33,7 @@ main > article {
     padding: 15px;
     border-radius: 20px;
     color: white;
+    
 }
 
 article > h1 {
@@ -55,7 +57,7 @@ header {
     width: 100vw;
 }
 
-div.logo {
+a.logo {
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
@@ -63,14 +65,15 @@ div.logo {
     color: white;
     margin-bottom: 5px;
     padding: 20px;
+    text-decoration: none;
 }
 
-div.logo > h1{
+a.logo > h1{
     font-family: "Audiowide";
     font-size: 2.5em;
 }
 
-span {
+span#menu {
     color: black;
     background-color: white;
     text-align: center;
@@ -118,6 +121,7 @@ section#login {
     background-color: black; 
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 1px 1px 10px black;
 }
 
 div#imagem {
