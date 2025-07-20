@@ -37,6 +37,10 @@ Grande telas: acima de 1200px
         background-size: cover;
         background-repeat: no-repeat;
     }
+    
+    section#login {
+        height: 50vh;
+    }
 }
 
 @media screen and (min-width:992px) {
@@ -66,5 +70,9 @@ Grande telas: acima de 1200px
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    section#login {
+        height: 50vh;
     }
 }
