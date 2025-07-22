@@ -37,9 +37,27 @@ Grande telas: acima de 1200px
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
+
     section#login {
-        height: 50vh;
+        width: 80vw;
+        height: 300px;
+    }
+
+    div#imagem {
+        float: left;
+        height: 100%;
+        width: 45%;
+        background-size: cover;
+    }
+
+    div#formulario {
+        float: right;
+        height: 100%;
+        width: 55%;
+    }
+
+    main > article {
+        width: 60%;
     }
 }
 
@@ -73,6 +91,30 @@ Grande telas: acima de 1200px
     }
 
     section#login {
-        height: 50vh;
+        width: 75vw;
+        max-width: 950px;
+        height: 300px;
+    }
+
+
+    div#imagem {
+        float: right;
+        height: 100%;
+        width: 50%;
+        background-position: center top;
+    }
+
+    div#formulario {
+        float: left;
+        height: 100%;
+        width: 50%;
+    }
+
+    div#formulario > h2 {
+        font-size: 1.5em;
+    }
+
+    main > article {
+        width: 60%;
     }
 }
