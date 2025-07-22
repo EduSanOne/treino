@@ -38,27 +38,6 @@ Grande telas: acima de 1200px
         background-repeat: no-repeat;
     }
 
-    section#login {
-        width: 80vw;
-        height: 300px;
-    }
-
-    div#imagem {
-        float: left;
-        height: 100%;
-        width: 45%;
-        background-size: cover;
-    }
-
-    div#formulario {
-        float: right;
-        height: 100%;
-        width: 55%;
-    }
-
-    main > article {
-        width: 80%;
-    }
 }
 
 @media screen and (min-width:992px) {
