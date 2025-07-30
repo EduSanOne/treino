@@ -12,10 +12,12 @@
 
 /* Faixada geral com slogan*/
 
+
+
     .tela-principal {
         background-image: linear-gradient(rgba(8, 23, 46, 0.795),rgba(8, 23, 46, 0.795)), url(../imagens/banner.png);
         min-height: 100vh;
-        min-width: 100%;
+        min-width: 100vh;
         background-position: center center;
         background-size: cover;
         position: relative;
@@ -100,6 +102,56 @@ footer {
     width: 80%;
     margin: auto;
 }
+
+/* --------------- CURSOS ------------ */
+
+.areacursos {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.areacursos h2 {
+    margin: 100px auto 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.areacursos p {
+    font-weight: 200;
+    margin-bottom: 60px;
+}
+
+.partecursos {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.partecursos div {
+    flex: 30%;
+    background-color: rgb(255,243,243);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.partecursos div:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.61);
+}
+
+.partecursos h3 {
+    font-weight: 600;
+    margin: 20px 0;
+    font-size: 1;
+}
+
+.partecursos div p {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+
 
 footer h4 {
     font-weight: 700;
