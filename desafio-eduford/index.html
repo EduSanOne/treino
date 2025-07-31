@@ -10,12 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9a922a6e1e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <section class="tela-principal">
         <header>
             <a href="index.html"><img src="imagens/logo.png" alt="Logo-Eduford"></a>
-            <nav class="navbar">
+               <span class="material-symbols-outlined" onclick="showMenu()" id="button-menu">menu</span>
+            <nav class="navbar" id="navBar">
+                <span class="material-symbols-outlined" onclick="hideMenu()">close</span>
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Sobre</a></li>
@@ -64,6 +67,18 @@
         <i class="fa-brands fa-linkedin"></i>
     </footer>
 </body>
- 
+ <!------- JAVASCRIPT PARA MENU ---------->
+ <script>
+    var navBar = document.getElementById("navBar");
+
+    function showMenu(){
+        navBar.style.right = "0";
+    }
+
+    function hideMenu() {
+        navBar.style.right = "-180px";
+    }
+
+ </script>
 
 </html>
