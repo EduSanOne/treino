@@ -50,4 +50,8 @@
     .partecursos {
         display: flex;
     }
+
+    .row {
+        flex-flow: row nowrap;
+    }
 }

@@ -190,6 +190,10 @@
     text-align: center;
 }
 
+.areacampos p {
+    margin-bottom: 20px;
+}
+
 .row {
     display: flex;
     flex-flow: column;
@@ -199,44 +203,48 @@
 .col-campos {
     position: relative;
     width: 100%;
-    height: 500px;
 }
 
 .col-campos img {
     width: 100%;
+    height: 100%;
     display: block;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .layer {
-        background: transparent;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: 0.5s;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
 }
 
 .layer:hover {
     background-color: rgba(255, 0, 0, 0.678);
+    border-radius: 20px;
 }
-
 
 .layer h3 {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
+    transition: 0.5s;
+    color: #fff;
+    font-weight: 200;
 }
 
-.layer h3:hover {
+.layer:hover h3 {
     bottom: 49%;
     opacity: 1;
 }
