@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tela-principal {
+    background: linear-gradient(to bottom, rgba(6, 3, 41, 0.192),rgba(7, 4, 39, 0.281)),url(../imagens/background.jpg);
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    height: 40px;
+}
+
+.navbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: orangered;
+    z-index: 2;
+    width: 150px;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin: 30px 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.slogan h1 {
+    font-size: 40px;
+    line-height: 35px;
+}
+
+.slogan p {
+    margin-bottom: 50px;
+    font-size: 13px;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 16px 32px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.hero-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-btn:hover {
+    background-color: red;
+    border: 1px solid red;
+}
