@@ -10,8 +10,8 @@
 <body>
     <div class="tela-principal">
         <header>
-            <img src="imagens/logo.png" alt="">
-           
+            <a href="index.html"><img src="imagens/logo.png" alt=""></a>
+            <span class="material-symbols-outlined" onclick="openMenu()">menu</span>
             <nav class="navbar" id="navBar">
                 <ul>
                     <li><a href="">HOME</a></li>
@@ -35,7 +35,7 @@
 <script>
     var navBar = document.getElementByid("navBar");
     
-    function openMenu() {
+    function openMenu (){
         navBar.style.right = "0";
     }
 </script>
