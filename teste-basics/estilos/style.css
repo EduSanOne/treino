@@ -25,9 +25,13 @@ header img {
     height: 40px;
 }
 
+header span {
+    color: white;
+}
+
 .navbar {
-    position: absolute;
-    right: -150px;
+    position: fixed;
+    right: -180px;
     top: 0;
     height: 100vh;
     background-color: orangered;
@@ -50,11 +54,23 @@ header img {
     padding: 5px;
     border-radius: 5px;
     font-size: 13px;
+    display: inline-block;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 0%;
+    height: 2px;
     background-color: #fff;
-    color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover:after {
+    opacity: 1;
+    width: 100%;
 }
 
 
