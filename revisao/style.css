@@ -137,3 +137,18 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+footer {
+    background-color: #331F19;
+    padding: 2rem;
+    text-align: center;
+}
+
+.paragrafo-footer {
+    color: #F4F0EA;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ccd595;
+}
