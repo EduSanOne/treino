@@ -24,6 +24,7 @@ main {
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
 }
 
 h2 {
@@ -31,3 +32,25 @@ h2 {
     font-size: 1.2rem;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="text"], input[type="date"],input[type="password"] {
+    border: 2px solid #54ff54bd;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 0.6rem;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    accent-color: #54ff54bd;
+}
+
+select {
+    width: 8rem;
+    background-color: #54ff54bd;
+    border-radius: 5rem;
+}
