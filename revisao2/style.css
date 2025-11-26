@@ -38,7 +38,7 @@ section {
     gap: 1rem;
 }
 
-input[type="text"], input[type="date"],input[type="password"] {
+input[type="text"], input[type="date"],input[type="password"],input[type="email"] {
     border: 2px solid #54ff54bd;
     border-radius: 1rem;
     width: 100%;
@@ -53,4 +53,75 @@ select {
     width: 8rem;
     background-color: #54ff54bd;
     border-radius: 5rem;
+}
+
+img {
+    height: 10rem;
+}
+
+table {
+    border-collapse: collapse;
+    color: black;
+}
+
+th {
+    background-color: #54ff54bd;
+    padding: 1rem;
+}
+
+td {
+    text-align: center;
+    padding: 1rem;
+}
+
+tfoot {
+    background-color: rgb(54, 54, 54);
+    color: white;
+}
+
+tfoot tr td {
+    padding-left: 15rem;
+}
+
+details {
+    background-color: #54ff54bd;
+    padding: 1.5rem;
+    border-radius: 5rem;
+    color: black;
+    font-size: 1.1rem;
+}
+
+details ol {
+    padding-left: 2rem;
+    
+}
+
+fieldset {
+    border: 1px solid #54ff54bd;
+    padding: 1rem;
+}
+
+fieldset textarea {
+    border: 2px solid #54ff54bd;
+    border-radius: 1rem;
+    padding: 0.6rem;
+}
+
+fieldset button {
+    background-color: #54ff54bd;
+    padding: 1rem;
+    border-radius: 5rem;
+    font-family: "Cabin";
+}
+
+footer {
+    background-color: black;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #54ff54bd;
 }
