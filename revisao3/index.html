@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisao 3</title>
+    <title>Revisao3</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <a href="" id="logo1">
+        <a href="index.html" id="logo1">
             <h1>EddySans</h1>
             <p>The Best Products for you</p>
         </a>
-        <span id="menu" class="material-symbols-outlined">menu</span> 
+        <span id="menu" class="material-symbols-outlined" onclick="AbrirMenu()">menu</span> 
         <nav id="navbar">
             <ul>
                 <a href="index.html"><li>Home</li></a>
@@ -24,10 +25,31 @@
         </nav>
     </header>
     <main>
+        <!--Introducao-->
         <section>
-            <h1>Welcome</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur rerum autem. Facere magnam, provident voluptatum dignissimos atque magni quod eligendi animi at dolorem pariatur accusamus laborum error excepturi dolore aperiam obcaecati et ab asperiores. Vel ipsam quasi alias itaque quo quam pariatur consequatur! Sit officia odit incidunt ut facere dolore harum ullam qui soluta alias hic, veniam nam accusantium sequi! Ut ea dolor voluptas laborum! Dolorum est illum in a soluta amet voluptate quos. Voluptatem vero veniam, minima excepturi pariatur unde neque aliquam mollitia perspiciatis harum impedit itaque totam id corporis nisi quasi minus fugit, cumque expedita in ad.</p>
-        </section>
+            <h2>Inauguração da Loja</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam excepturi eveniet unde suscipit tenetur? Tempore, omnis quis nam quae laborum dolorem inventore neque numquam tenetur nisi magni beatae aspernatur quam non quos suscipit praesentium dicta vel, velit sit et impedit, quod corporis odio. Omnis voluptatum enim repellendus consectetur reprehenderit. Illum voluptas culpa rerum, quos error deleniti dolorem, facilis non mollitia nisi distinctio. Fuga veniam perspiciatis inventore vitae. Vitae dolore adipisci, sed delectus quisquam rem dolor illum quaerat animi molestiae unde fugiat aliquid, explicabo autem consequuntur. Fugit quaerat iure magni tempora? Doloribus consequatur quidem molestiae assumenda animi quibusdam voluptate quas.</p>
+        </section>    
     </main>
+    <footer>
+        <p>Maked by Eduardo Santos &copy;</p>
+    </footer>
 </body>
+<script>
+    function AbrirMenu(){
+        if (navbar.style.display == 'block'){
+            navbar.style.display = 'none'
+        } else {
+            navbar.style.display = 'block'
+        }
+    }
+
+    function mudouTamanho(){
+        if (window.innerWidth>=768){
+            navbar.style.display = 'block'
+        } else {
+            navbar.style.display = 'none'
+        }
+    }
+</script>
 </html>
