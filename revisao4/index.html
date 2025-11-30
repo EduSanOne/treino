@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EddySans - Store</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <a href="index.html" id="logo1">
+            <h1>EddySans</h1>
+            <p>The best products for you</p>
+        </a>
+        <span id="menu" class="material-symbols-outlined" onclick="openMenu()">menu</span> 
+        <nav id="navbar">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href=""><li>Products</li></a>
+                <a href="account.html"><li>Account</li></a>
+                <a href=""><li>About</li></a>
+            </ul>
+        </nav>
+    </header>
+</body>
+<script>
+    function openMenu() {
+        if (navbar.style.display == "none"){
+            navbar.style.display = "block"
+        } else {
+            navbar.style.display = "none"
+        }
+    }
+
+    function mudouTamanho(){
+        if (window.innerWidth>=768){
+            navbar.style.display = "block"
+        } else {
+            navbar.stye.display = "none"
+        }
+    }
+
+</script>
+</html>

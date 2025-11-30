@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EddySans - Store</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <a href="index.html" id="logo1">
+            <h1>EddySans</h1>
+            <p>The best products for you</p>
+        </a>
+        <span id="menu" class="material-symbols-outlined" onclick="openMenu()">menu</span> 
+        <nav id="navbar">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href=""><li>Products</li></a>
+                <a href="account.html"><li>Account</li></a>
+                <a href=""><li>About</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login1">
+            <div id="imglog"></div>
+            <div id="formulario">
+                <h2>Login</h2>
+                <p>Welcome back. Log in or create an account to acess and configure your environment.</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" required minlength="8" maxlength="28" placeholder="Your email...">
+                        <label for="iemail"></label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="pass" id="ipass" required minlength="8" maxlength="18" placeholder="Your password...">
+                        <label for="ipass"></label>
+                    </div>
+                    <div class="campo">
+                        <input type="submit" value="Login">
+                        <button>I forgot my password<span id="botaoemail" class="material-symbols-outlined">email</span></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    function openMenu() {
+        if (navbar.style.display == "none"){
+            navbar.style.display = "block"
+        } else {
+            navbar.style.display = "none"
+        }
+    }
+
+    function mudouTamanho(){
+        if (window.innerWidth>=768){
+            navbar.style.display = "block"
+        } else {
+            navbar.stye.display = "none"
+        }
+    }
+</script>
+</html>
