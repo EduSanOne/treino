@@ -195,9 +195,7 @@ div#formulario > form > input[type=submit] {
     background-color: #5FD1CD;
     color: white;
     border: 2px solid white;
-    
 }
-
 
 div#formulario > form > input[type=submit]:hover {
     background-color: white;

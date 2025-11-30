@@ -28,28 +28,30 @@
         <!--Login-->
         <section id="login">
             <div id="imagemlog"></div>
-            <h2>Login</h2>
-            <p>Welcome back. Log in or create an account to acess and configure your environment.</p>
-            <form action="loginf.php" method="post" id="loginf">
-                <div class="campo">
-                    <span class="material-symbols-outlined">person</span>
-                    <input type="email" name="email" id="iemail">
-                    <label for="iemail">E-mail</label>
-                </div>
-                <div class="campo">
-                    <span class="material-symbols-outlined">key</span>
-                    <input type="password" name="pass" id="ipass">
-                    <label for="ipass">Password</label>
-                </div>
-                <div class="campo">
-                    <input type="submit" value="Login">
-                </div>
-                <div class="campo">
-                    <button>
-                        I forgot my password
-                    </button>
-                </div>
-            </form>
+            <div id="formulario">
+                <h2>Login</h2>
+                <p>Welcome back. Log in or create an account to acess and configure your environment.</p>
+                <form action="loginf.php" method="post" id="loginf">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" required minlength="8" maxlength="30" placeholder="Your email...">
+                        <label for="iemail">E-mail</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="pass" id="ipass" required minlength="8" maxlength="16" placeholder="Your password...">
+                        <label for="ipass">Password</label>
+                    </div>
+                    <div class="campo">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="campo">
+                        <button>
+                            I forgot my password
+                        </button>
+                    </div>
+                </form>
+            </div>
         </section>    
     </main>
     <footer>
