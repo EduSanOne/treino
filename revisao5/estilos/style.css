@@ -16,6 +16,7 @@ body {
 
 #navbar {
     display: none;
+    margin-right: 20px;
 }
 
 header {
@@ -58,7 +59,7 @@ header {
 
 #navbar ul a li {
     width: 100%;
-    padding: 1rem;
+    padding: 10px;
 }
 
 #navbar ul a li:hover {
@@ -66,6 +67,28 @@ header {
     color: black;
     transition: 1s;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+section#login {
+    height: 400px;
+    width: 300px;
+    background-color: black;
+    color: white;
+}
+
+div.imagem {
+    height: 200px;
+    background: url(../imagens/people-buying-p.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 @media screen and (min-width:768px) {
     header {
@@ -77,6 +100,10 @@ header {
 
     #menu {
         display: none;
+    }
+
+    #navbar {
+        display: block;
     }
 
     #navbar ul{
