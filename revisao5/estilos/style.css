@@ -47,21 +47,23 @@ header {
     transition: 1s;
 }
 
+
 #navbar ul {
     list-style: none;
 }
 
 #navbar ul a {
+    display: block;
     text-decoration: none;
     color: white;
 }
 
-#navbar ul a li {
+#navbar ul li a  {
     width: 100%;
     padding: 10px;
 }
 
-#navbar ul a li:hover {
+#navbar ul li a:hover {
     background-color: white;
     color: black;
     transition: 1s;

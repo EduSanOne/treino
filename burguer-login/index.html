@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burguer Login</title>
+    <title>Treino Burguer-login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,56 +11,40 @@
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <h1>Treino de Navbar e <br>Tela de login</h1>
-    </header>
-    <!--NAVEGAÇÃO-->
-        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-    <nav id="navbar">
+        <a href="index.html" class="logo">
+            <h1>EddySans</h1>
+            <p>The best products for you.</p>
+        </a>
+        <span id="menu" onclick="clickMenu()"  class="material-symbols-outlined">menu</span>
+        <nav id="navbar">
         <ul>
-            <li><a href="index.html">Opção 1</a></li>
-            <li><a href="index.html">Opção 2</a></li>
-            <li><a href="index.html">Opção 3</a></li>
-            <li><a href="index.html">Opção 4</a></li>
-            <li><a href="index.html">Opção 5</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
-    </nav>
+        </nav>
+    </header>
     <main>
-        <!--PARTE DE LOGIN-->
-        <section id="login">
-            <div id="imagem"></div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-                    <div class="campo">
-                        <span class="material-symbols-outlined">person</span>  
-                        <input type="email" name="mail" id="imail" required minlength="12" maxlength="20" placeholder="Insira seu e-mail">
-                        <label for="imail">E-mail</label>
-                    </div>
-                    <div class="campo">
-                        <span class="material-symbols-outlined">key</span>
-                        <input type="password" name="pass" id="ipass" required minlength="8" maxlength="20" placeholder="Digite sua senha">
-                        <label for="ipass">Senha</label>
-                    </div>
-                    <input type="submit" value="Entrar">
-                    <a href="esqueci.html" id="botao">Esqueci a senha  <span class="material-symbols-outlined">mail</span></a>
-                </form>
-            </div>
-        </section>
+        <article>
+            <h1>A Loja estará inagurando em 19/01/2026</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur velit quisquam quos. Dolore, tenetur vero! Deserunt obcaecati accusantium illum dolor, harum maiores architecto tempora repellendus id mollitia quos nemo maxime.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptates eaque placeat vero, excepturi quis consequatur, dolores sapiente sequi blanditiis eligendi ullam aut ut! Cupiditate, aliquam praesentium. Voluptates, maiores illo.</p>
+        </article>
     </main>
     <footer>
-        Feito por Eduardo Santos. MV01
+        Project maked by Eduardo Santos (T2.2).
     </footer>
     <script>
         function clickMenu() {
-            if (navbar.style.display == 'none'){
-                navbar.style.display = 'block'
-            } else {
+            if (navbar.style.display == 'block') {
                 navbar.style.display = 'none'
+            } else {
+                navbar.style.display = 'block'
             }
         }
 
-        function mudouTamanho() {
+        function mudouTamanho () {
             if (window.innerWidth >= 768) {
                 navbar.style.display = 'block'
             } else {

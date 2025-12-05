@@ -9,13 +9,16 @@ Desktop: 992px até 1200px
 Grande telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    main {
-        background-image: linear-gradient(to bottom, rgb(107, 187, 253),rgb(182, 233, 253) ,rgb(124, 178, 248));
+@media screen and (min-width:768px) and (max-width:992px) {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
     }
-    
+
     span#menu {
-        display: none;
+        display:none;
     }
 
     nav#navbar {
@@ -23,38 +26,30 @@ Grande telas: acima de 1200px
     }
 
     nav#navbar > ul {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: 20px;
     }
 
-    nav#navbar > ul > li {
-        display: inline-block;
-        border-radius: 10px;
-        margin-left: 10px;
-    }
-    
-    section#login {
-        width: 90vw;
-        max-width: 700px;
-        height: 300px;
-    }
-    
-    div#imagem {
-        float: left;
-        height: 100%;
-        width: 35%;
+    main {
+        background-image: url(../imagens/store-show-clothing-interior-design-aisle-design-1220950-pxhere.com.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    div#formulario {
-        float: right;
-        width: 65%;
-    }
 }
 
+@media screen and (min-width:992px) {
+    header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-@media screen and (min-width: 992px) {
     span#menu {
-        display: none;
+        display:none;
     }
 
     nav#navbar {
@@ -62,30 +57,43 @@ Grande telas: acima de 1200px
     }
 
     nav#navbar > ul {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: 20px;
     }
 
-    nav#navbar > ul > li {
-        display: inline-block;
-        border-radius: 10px;
-        margin-left: 10px;
+    main {
+        background-image: url(../imagens/store-show-clothing-interior-design-aisle-design-1220950-pxhere.com.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-    
+
     section#login {
-        width: 80vw;
-        max-width: 1000px;
+        width: 75vw;
+        max-width: 950px;
         height: 300px;
     }
-    
+
+
     div#imagem {
         float: right;
         height: 100%;
         width: 50%;
+        background-position: center top;
     }
 
     div#formulario {
         float: left;
+        height: 100%;
         width: 50%;
+    }
+
+    div#formulario > h2 {
+        font-size: 1.5em;
+    }
+
+    main > article {
+        width: 60%;
     }
 }
