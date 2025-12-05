@@ -68,17 +68,22 @@ header {
     transition: 1s;
 }
 
+/* account */
+
 main {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 section#login {
-    height: 400px;
+    height: 500px;
     width: 300px;
     background-color: black;
     color: white;
+    border-radius: 1rem;
+    overflow: hidden;
 }
 
 div.imagem {
@@ -89,6 +94,37 @@ div.imagem {
     background-size: cover;
 }
 
+div#formulario {
+    padding: 1rem;
+}
+
+div#formulario h2 {
+    text-align: center;
+}
+
+div#formulario p {
+    margin-bottom: 5px;
+}
+
+
+label {
+    display: none;
+}
+
+div.campo {
+    width: 100%;
+}
+
+div.campo span {
+    border: 1px solid white;
+    padding: 4px;
+}
+
+div.campo input[type="email"], input[type="password"]{
+    height: 40px;
+    margin: 5px 0;
+    width: calc(100% - 40px);
+}
 
 @media screen and (min-width:768px) {
     header {
